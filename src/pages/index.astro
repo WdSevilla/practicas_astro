@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import Titulo from '../components/Titulo.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Bienvenido a Astro.">
+	<Titulo />
+	<Card nombre="Luis" avatar={true}/>
+	<Card nombre="Sandra" ocupacion='Ing.Desing' avatar={false}>
+		<p slot="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+			Ducimus illum fugiat dolorum iure earum a, aperiam autem perferendis quod praesentium tempore rerum voluptate alias nesciunt quas, repud
+			iandae hic ipsa harum?</p>
+	</Card>
+	
+</Layout>
+
